@@ -22,7 +22,7 @@ const Books = () => {
         <h1>My Book Shop</h1>
         <div className="books">
             {books.map(book=>(
-            <div className="book">
+            <div className="book" key={book.id}>
                 {book.cover && <img src={book.cover} alt=""/>}
                 <h2>{book.title}</h2>
                 <p>{book.desc}</p>
